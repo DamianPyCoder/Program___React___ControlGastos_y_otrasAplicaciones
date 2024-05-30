@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi primera App con React</title>
+</head>
+<body>
+	
+	<div id="app"></div>
+
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<script>
+		// Accedemos al contenedor de la app
+		const contenedor = document.getElementById('app');
+
+		// Creamos un encabezado
+		const encabezado = React.createElement('h1', {}, 'Hola Mundo!');
+
+		// Renderizamos el encabezado dentro del contenedor.
+		ReactDOM.render(encabezado, contenedor);
+	</script>
+</body>
+</html>
